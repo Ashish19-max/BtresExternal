@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flight Booking Regression" verbose="1">
+	<parameter name="browser" value="chrome" />
+	<parameter name="environment" value="qa" />
+
+	<test name="One Way Booking" enabled="true">
+		<classes>
+			<class name="testCases.OneWayTest" />
+		</classes>
+	</test>
+
+	<test name="Return Booking" enabled="false">
+		<classes>
+			<class name="testCases.ReturnWayTest" />
+		</classes>
+	</test>
+
+	<test name="Multiple Passengers" enabled="false">
+		<classes>
+			<class name="testCases.ScenarioMultiplePassengerTest" />
+		</classes>
+	</test>
+
+	<test name="Flight Booking Tests" enabled="false">
+		<classes>
+			<class name="testCases.OneWayTest" />
+			<class name="testCases.ReturnWayTest" />
+			<class name="testCases.ScenarioMultiplePassengerTest" />
+		</classes>
+	</test>
+</suite>
