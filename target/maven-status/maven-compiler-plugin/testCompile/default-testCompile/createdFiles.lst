@@ -1,3 +1,4 @@
+testCases\TC_02_ManageBooking.class
 testCases\ReturnWayTest.class
 testCases\OneWayTest.class
 testCases\ScenarioMultiplePassengerTest.class
